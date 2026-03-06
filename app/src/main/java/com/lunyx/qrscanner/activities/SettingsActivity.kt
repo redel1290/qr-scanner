@@ -2,12 +2,9 @@ package com.lunyx.qrscanner.activities
 
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.view.View
 import android.view.MenuItem
 import android.widget.ArrayAdapter
 import android.widget.Spinner
-import android.widget.AdapterView
-import android.widget.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.lunyx.qrscanner.R
@@ -52,7 +49,6 @@ class SettingsActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, themes)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerTheme.adapter = adapter
-
         val current = when (prefs.getString("theme", "light")) {
             "dark" -> 1
             "system" -> 2
@@ -66,7 +62,6 @@ class SettingsActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, langs)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerLanguage.adapter = adapter
-
         val current = when (prefs.getString("language", "uk")) {
             "en" -> 1
             "de" -> 2
@@ -80,7 +75,6 @@ class SettingsActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, formats)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerFormat.adapter = adapter
-
         val current = when (prefs.getString("format", "PNG")) {
             "JPG" -> 1
             "WEBP" -> 2
@@ -112,14 +106,12 @@ class SettingsActivity : AppCompatActivity() {
             .putString("format", format)
             .apply()
 
-        // Apply theme
         when (theme) {
             "dark" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             "system" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
             else -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         }
 
-        // Apply locale and restart
         LocaleHelper.applyLocale(this, language)
         finish()
         startActivity(intent)
