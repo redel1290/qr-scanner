@@ -1,0 +1,3 @@
+-keep class com.lunyx.qrscanner.** { *; }
+-keep class com.journeyapps.** { *; }
+-keep class com.google.zxing.** { *; }

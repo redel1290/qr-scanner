@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QR Scanner</string>
+    <string name="app_subtitle">QR-Codes scannen und erstellen</string>
+    <string name="scan_qr">📷 QR-Code scannen</string>
+    <string name="create_qr">✏️ QR-Code erstellen</string>
+    <string name="settings">Einstellungen</string>
+    <string name="scan_result">Scan-Ergebnis</string>
+    <string name="scan_hint">Kamera auf QR-Code richten</string>
+    <string name="copy">Kopieren</string>
+    <string name="copied">Kopiert!</string>
+    <string name="open_link">Öffnen</string>
+    <string name="close">Schließen</string>
+    <string name="camera_permission_needed">Kamera-Berechtigung erforderlich</string>
+    <string name="qr_type">QR-Code-Typ</string>
+    <string name="enter_text">Text eingeben</string>
+    <string name="enter_url">URL (https://...)</string>
+    <string name="wifi_name">Netzwerkname (SSID)</string>
+    <string name="wifi_pass">WLAN-Passwort</string>
+    <string name="contact_name">Kontaktname</string>
+    <string name="contact_phone">Telefon</string>
+    <string name="contact_email">E-Mail</string>
+    <string name="email_to">An (E-Mail)</string>
+    <string name="email_subject">Betreff</string>
+    <string name="email_body">Nachricht</string>
+    <string name="phone_number">Telefonnummer</string>
+    <string name="sms_number">Telefonnummer</string>
+    <string name="sms_text">SMS-Text</string>
+    <string name="generate">Generieren</string>
+    <string name="save_or_share">Speichern / Teilen</string>
+    <string name="download">⬇️ In Galerie speichern</string>
+    <string name="share">📤 Teilen</string>
+    <string name="choose_action">Was mit dem QR-Code tun?</string>
+    <string name="saved_to_gallery">In Galerie gespeichert!</string>
+    <string name="fill_fields">Bitte Pflichtfelder ausfüllen</string>
+    <string name="theme">Thema</string>
+    <string name="theme_light">☀️ Hell</string>
+    <string name="theme_dark">🌙 Dunkel</string>
+    <string name="theme_system">⚙️ System</string>
+    <string name="language">Sprache</string>
+    <string name="save_format">Speicherformat</string>
+    <string name="save">Einstellungen speichern</string>
+
+    <string-array name="wifi_types">
+        <item>WPA/WPA2</item>
+        <item>Kein Passwort</item>
+    </string-array>
+</resources>

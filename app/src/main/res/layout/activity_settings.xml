@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorBackground">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"/>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+
+            <!-- Theme -->
+            <TextView android:text="@string/theme"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textStyle="bold" android:textSize="16sp"
+                android:textColor="?attr/colorOnBackground" android:layout_marginBottom="8dp"/>
+            <Spinner android:id="@+id/spinnerTheme"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:background="@drawable/spinner_bg" android:layout_marginBottom="24dp"/>
+
+            <!-- Language -->
+            <TextView android:text="@string/language"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textStyle="bold" android:textSize="16sp"
+                android:textColor="?attr/colorOnBackground" android:layout_marginBottom="8dp"/>
+            <Spinner android:id="@+id/spinnerLanguage"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:background="@drawable/spinner_bg" android:layout_marginBottom="24dp"/>
+
+            <!-- Format -->
+            <TextView android:text="@string/save_format"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textStyle="bold" android:textSize="16sp"
+                android:textColor="?attr/colorOnBackground" android:layout_marginBottom="8dp"/>
+            <Spinner android:id="@+id/spinnerFormat"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:background="@drawable/spinner_bg" android:layout_marginBottom="32dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveSettings"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:text="@string/save" android:textSize="16sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

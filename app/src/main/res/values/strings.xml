@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QR Сканер</string>
+    <string name="app_subtitle">Сканування та створення QR-кодів</string>
+    <string name="scan_qr">📷 Сканувати QR-код</string>
+    <string name="create_qr">✏️ Створити QR-код</string>
+    <string name="settings">Налаштування</string>
+    <string name="scan_result">Результат сканування</string>
+    <string name="scan_hint">Наведіть камеру на QR-код</string>
+    <string name="copy">Копіювати</string>
+    <string name="copied">Скопійовано!</string>
+    <string name="open_link">Відкрити</string>
+    <string name="close">Закрити</string>
+    <string name="camera_permission_needed">Потрібен дозвіл камери</string>
+    <string name="qr_type">Тип QR-коду</string>
+    <string name="enter_text">Введіть текст</string>
+    <string name="enter_url">Посилання (https://...)</string>
+    <string name="wifi_name">Назва мережі (SSID)</string>
+    <string name="wifi_pass">Пароль Wi-Fi</string>
+    <string name="contact_name">Ім\'я контакту</string>
+    <string name="contact_phone">Телефон</string>
+    <string name="contact_email">Email</string>
+    <string name="email_to">Кому (email)</string>
+    <string name="email_subject">Тема</string>
+    <string name="email_body">Текст листа</string>
+    <string name="phone_number">Номер телефону</string>
+    <string name="sms_number">Номер телефону</string>
+    <string name="sms_text">Текст SMS</string>
+    <string name="generate">Згенерувати</string>
+    <string name="save_or_share">Зберегти / Поділитися</string>
+    <string name="download">⬇️ Завантажити в галерею</string>
+    <string name="share">📤 Поділитися</string>
+    <string name="choose_action">Що зробити з QR-кодом?</string>
+    <string name="saved_to_gallery">Збережено в галерею!</string>
+    <string name="fill_fields">Заповніть обов\'язкові поля</string>
+    <string name="theme">Тема</string>
+    <string name="theme_light">☀️ Світла</string>
+    <string name="theme_dark">🌙 Темна</string>
+    <string name="theme_system">⚙️ Системна</string>
+    <string name="language">Мова</string>
+    <string name="save_format">Формат збереження</string>
+    <string name="save">Зберегти налаштування</string>
+
+    <string-array name="wifi_types">
+        <item>WPA/WPA2</item>
+        <item>Без пароля</item>
+    </string-array>
+</resources>
